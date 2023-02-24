@@ -1,1 +1,2 @@
-<button class="btn">{{text}}</button>
+<button [ngStyle]="{'background-color': color}" class="btn" (click)="onClick()">{{text}}</button>
+<!-- the (click)="onClick()" communicates with the onClick() method in the export area of 'button.component.ts' -->
