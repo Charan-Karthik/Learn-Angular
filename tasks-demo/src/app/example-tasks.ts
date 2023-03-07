@@ -1,4 +1,5 @@
 // This is like a mock DB, storing the data we want to display in the front-end
+// a kinda fake back-end
 
 import { Task } from "./Task";
 
