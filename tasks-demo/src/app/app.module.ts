@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { IndividualTaskComponent } from './components/individual-task/individual-task.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IndividualTaskComponent } from './components/individual-task/individual
     IndividualTaskComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
