@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -9,16 +10,17 @@ import { IndividualTaskComponent } from './components/individual-task/individual
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-  declarations: [
+  declarations: [ // this are for components
     AppComponent,
     HeaderComponent,
     ButtonComponent,
     TasksComponent,
     IndividualTaskComponent
   ],
-  imports: [
+  imports: [ // this is for modules
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
