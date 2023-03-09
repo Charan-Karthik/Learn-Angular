@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from '../../Task'
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,9 +9,19 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 })
 export class IndividualTaskComponent {
   @Input() task!: Task;
+  // @Output() onDeleteTask(): EventEmitter<Task> {
+  //   return new EventEmitter();
+  // } 
+  @Output() onDeleteTask(): EventEmitter<Task> {
+    return new EventEmitter()
+  }
+    
+
+
   faTimes = faTimes;
 
   onDelete(task: Task) {
-    console.log('trying to delete', task)
+    console.log('trying to delete', task);
+    // this.onDeleteTask.emit(task);
   }
 }
