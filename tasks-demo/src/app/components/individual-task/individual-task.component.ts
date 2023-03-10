@@ -24,6 +24,6 @@ export class IndividualTaskComponent {
 
   onDelete(task: Task) {
     console.log('trying to delete', task);
-    this.onDeleteTask.emit(task);
+    // this.onDeleteTask.emit(task);
   }
 }
