@@ -12,9 +12,11 @@ export class IndividualTaskComponent {
   // @Output() onDeleteTask(): EventEmitter<Task> {
   //   return new EventEmitter();
   // } 
-  @Output() onDeleteTask(): EventEmitter<Task> {
-    return new EventEmitter()
-  }
+  // @Output() onDeleteTask(): EventEmitter<Task> {
+  //   return new EventEmitter()
+  // }
+
+  @Output() onDeleteTask(): EventEmitter<Task> = new EventEmitter();
     
 
 
@@ -22,6 +24,6 @@ export class IndividualTaskComponent {
 
   onDelete(task: Task) {
     console.log('trying to delete', task);
-    // this.onDeleteTask.emit(task);
+    this.onDeleteTask.emit(task);
   }
 }
