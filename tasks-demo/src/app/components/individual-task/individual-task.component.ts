@@ -12,11 +12,11 @@ export class IndividualTaskComponent {
   // @Output() onDeleteTask(): EventEmitter<Task> {
   //   return new EventEmitter();
   // } 
-  // @Output() onDeleteTask(): EventEmitter<Task> {
-  //   return new EventEmitter()
-  // }
+  @Output() onDeleteTask(): EventEmitter<Task> {
+    return new EventEmitter()
+  }
 
-  @Output() onDeleteTask(): EventEmitter<Task> = new EventEmitter();
+  // @Output() onDeleteTask(): EventEmitter<Task> = new EventEmitter();
     
 
 
